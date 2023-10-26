@@ -32,5 +32,4 @@ jobs:
       - name: Push
         run: dotnet nuget push TrainCloud.Uic.${VERSION}.nupkg --source https://nuget.pkg.github.com/traincloud-net/index.json --api-key ${GITHUB_TOKEN}
         env:
-          GITHUB_TOKEN: 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
-          #GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.TRAINCLOUD_NUGET_PUSH_TOKEN }}
