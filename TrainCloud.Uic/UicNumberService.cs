@@ -94,7 +94,7 @@ public class UicNumberService : IUicNumberService
     /// <returns>True if the provided UIC is valid, false if invalid</returns>
     public bool ValidateUic(string fullUic)
     {
-        // If the provided UIC is empty, shorter than 12 digits or not numeric it can't be valid -> return false
+        // If the provided UIC is empty, shorter/longer than 12 digits or not numeric it can't be valid -> return false
         if (string.IsNullOrEmpty(fullUic) ||
             fullUic.Length != 12 ||
             !long.TryParse(fullUic, out _))

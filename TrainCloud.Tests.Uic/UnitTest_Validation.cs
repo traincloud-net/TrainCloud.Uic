@@ -1,5 +1,4 @@
-﻿using TrainCloud.Uic;
-
+﻿
 namespace TrainCloud.Tests.Uic;
 
 [TestClass]
@@ -29,7 +28,7 @@ public class UnitTest_Validation
     public void Test_InvalidUic_Empty()
     {
         // Arrange
-        string invalidUicNumber = "012345678912";
+        string invalidUicNumber = string.Empty;
 
         // Act
         bool isValid = UicNumberService.ValidateUic(invalidUicNumber);
