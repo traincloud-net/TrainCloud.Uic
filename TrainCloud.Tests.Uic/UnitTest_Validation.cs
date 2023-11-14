@@ -4,12 +4,7 @@ namespace TrainCloud.Tests.Uic;
 [TestClass]
 public class UnitTest_Validation
 {
-    protected IUicNumberService UicNumberService { get; init; }
-
-    public UnitTest_Validation() 
-    {
-        UicNumberService = new UicNumberService();
-    }
+    protected IUicNumberService UicNumberService { get; } = new UicNumberService();
 
     [TestMethod()]
     public void Test_ValidUic()

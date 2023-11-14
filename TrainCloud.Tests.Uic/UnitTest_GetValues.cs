@@ -4,12 +4,7 @@ namespace TrainCloud.Tests.Uic;
 [TestClass]
 public class UnitTest_GetValues
 {
-    protected IUicNumberService UicNumberService { get; init; }
-
-    public UnitTest_GetValues()
-    {
-        UicNumberService = new UicNumberService();
-    }
+    protected IUicNumberService UicNumberService { get; } = new UicNumberService();
 
     [TestMethod()]
     public void Test_GetCarTypeCode_ValidUic()
@@ -34,7 +29,7 @@ public class UnitTest_GetValues
         Assert.ThrowsException<ArgumentException>(() =>
         {
             // Act
-            string carTypeCode = UicNumberService.GetCarTypeCode(invalidUicNumber);
+            _ = UicNumberService.GetCarTypeCode(invalidUicNumber);
         });
     }
 
@@ -61,7 +56,7 @@ public class UnitTest_GetValues
         Assert.ThrowsException<ArgumentException>(() =>
         {
             // Act
-            string countryCode = UicNumberService.GetCountryCode(invalidUicNumber);
+            _ = UicNumberService.GetCountryCode(invalidUicNumber);
         });
     }
 
@@ -88,7 +83,7 @@ public class UnitTest_GetValues
         Assert.ThrowsException<ArgumentException>(() =>
         {
             // Act
-            string carClassCode = UicNumberService.GetCarClassCode(invalidUicNumber);
+            _ = UicNumberService.GetCarClassCode(invalidUicNumber);
         });
     }
 
@@ -115,7 +110,7 @@ public class UnitTest_GetValues
         Assert.ThrowsException<ArgumentException>(() =>
         {
             // Act
-            string carClassSerialNr = UicNumberService.GetCarClassSerialNr(invalidUicNumber);
+            _ = UicNumberService.GetCarClassSerialNr(invalidUicNumber);
         });
     }
 
@@ -142,7 +137,7 @@ public class UnitTest_GetValues
         Assert.ThrowsException<ArgumentException>(() =>
         {
             // Act
-            string checksum = UicNumberService.GetChecksum(invalidUicNumber);
+            _ = UicNumberService.GetChecksum(invalidUicNumber);
         });
     }
 }

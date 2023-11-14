@@ -2,6 +2,10 @@
 
 The 'TrainCloud.Uic' library provides UicNumberService to work with UIC numbers
 
+## UIC numbers
+[Wikipedia](https://en.wikipedia.org/wiki/UIC_wagon_numbers)
+
+
 ## GitHub Actions
 [![Tests](https://github.com/traincloud-net/TrainCloud.Uic/actions/workflows/tests.yml/badge.svg)](https://github.com/traincloud-net/TrainCloud.Uic/actions/workflows/tests.yml) 
 [![NuGet](https://github.com/traincloud-net/TrainCloud.Uic/actions/workflows/nuget.yml/badge.svg)](https://github.com/traincloud-net/TrainCloud.Uic/actions/workflows/nuget.yml) 
@@ -28,6 +32,7 @@ dotnet add package Traincloud.Uic
 ```
 
 ```csharp
+[inject]
 protected IUicNumberService UicNumberService { get; init; }
 ```
 
