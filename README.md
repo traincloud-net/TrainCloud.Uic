@@ -2,36 +2,6 @@
 
 The `TrainCloud.Uic` library provides UicNumberService to work with [UIC numbers](https://en.wikipedia.org/wiki/UIC_wagon_numbers)
 
-
-## UIC numbers
-
-AABBCCCCDDDX
-
-* AA (Two digit car type code)
-* BB (Two digit country code)
-* CCCC (Four digit car class code)
-* DDD (Three digit car class serial number)
-* X (Checksum)
-
-
-
-## How to use
-
-Add github to nuget.config
-
-```bash
-dotnet add package Traincloud.Uic
-```
-
-```csharp
-[inject]
-protected IUicNumberService UicNumberService { get; init; }
-```
-
-```
-@inject IUicNumberService UICService
-```
-
 ## Status
 
 ### GitHub Actions
@@ -52,3 +22,30 @@ protected IUicNumberService UicNumberService { get; init; }
 [![Security Rating](https://sonarqube.traincloud.net/api/project_badges/measure?project=TrainCloud.Uic&metric=security_rating&token=sqb_452552b8fb07fffa84c1732d8def596c513ccf85)](https://sonarqube.traincloud.net/dashboard?id=TrainCloud.Uic) 
 [![Technical Debt](https://sonarqube.traincloud.net/api/project_badges/measure?project=TrainCloud.Uic&metric=sqale_index&token=sqb_452552b8fb07fffa84c1732d8def596c513ccf85)](https://sonarqube.traincloud.net/dashboard?id=TrainCloud.Uic) 
 [![Vulnerabilities](https://sonarqube.traincloud.net/api/project_badges/measure?project=TrainCloud.Uic&metric=vulnerabilities&token=sqb_452552b8fb07fffa84c1732d8def596c513ccf85)](https://sonarqube.traincloud.net/dashboard?id=TrainCloud.Uic)
+
+## UIC numbers
+
+AABBCCCCDDDX
+
+* AA (Two digit car type code)
+* BB (Two digit country code)
+* CCCC (Four digit car class code)
+* DDD (Three digit car class serial number)
+* X (Checksum)
+
+## How to use
+
+Add github to nuget.config
+
+```bash
+dotnet add package Traincloud.Uic
+```
+
+```csharp
+[inject]
+protected IUicNumberService UicNumberService { get; init; }
+```
+
+```csharp
+@inject IUicNumberService UICService
+```
