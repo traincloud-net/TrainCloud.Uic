@@ -6,15 +6,17 @@
 				<Nullable>enable</Nullable>
 
 				<GenerateDocumentationFile>True</GenerateDocumentationFile>
-				<RepositoryUrl>https://github.com/traincloud-net/TrainCloud.Uic</RepositoryUrl>
 				<RepositoryType>git</RepositoryType>
 				<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
 				<PackageReadmeFile>README.md</PackageReadmeFile>
 				<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+				<SignAssembly>False</SignAssembly>
+				<PackageProjectUrl>https://traincloud.net/</PackageProjectUrl>
+				<RepositoryUrl>https://github.com/traincloud-net/TrainCloud.Uic</RepositoryUrl>
 		</PropertyGroup>
 
 		<ItemGroup>
-		  <None Include="..\LICENSE.md">
+		  <None Include="..\LICENSE.txt">
 		    <Pack>True</Pack>
 		    <PackagePath>\</PackagePath>
 		  </None>

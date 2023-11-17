@@ -3,7 +3,6 @@ namespace TrainCloud.Uic;
 
 /// <summary>
 /// Functions to work with UIC numbers
-/// https://en.wikipedia.org/wiki/UIC_wagon_numbers
 /// </summary>
 public interface IUicNumberService
 {
