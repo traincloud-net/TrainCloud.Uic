@@ -1,5 +1,4 @@
-﻿
-namespace TrainCloud.Uic;
+﻿namespace TrainCloud.Uic;
 
 /// <summary>
 /// Functions to work with UIC numbers

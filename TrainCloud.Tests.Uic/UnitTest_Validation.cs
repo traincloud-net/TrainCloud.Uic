@@ -1,5 +1,4 @@
-﻿
-namespace TrainCloud.Tests.Uic;
+﻿namespace TrainCloud.Tests.Uic;
 
 [TestClass]
 public class UnitTest_Validation

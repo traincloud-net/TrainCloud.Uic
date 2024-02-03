@@ -1,4 +1,3 @@
-
 namespace TrainCloud.Tests.Uic;
 
 [TestClass]
