@@ -1,7 +1,7 @@
 ﻿namespace TrainCloud.Uic;
 
 /// <summary>
-/// Functions to work with UIC numbers
+/// Methods to work with UIC numbers
 /// </summary>
 public class UicNumberService : IUicNumberService
 {
