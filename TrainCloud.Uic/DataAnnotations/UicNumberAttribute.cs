@@ -9,6 +9,11 @@ namespace TrainCloud.Uic.DataAnnotations;
 [AttributeUsage(AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
 public class UicNumberAttribute : ValidationAttribute
 {
+    public UicNumberAttribute(string errorMessage = "The provided UIC number is invalid")
+    {
+        ErrorMessage = errorMessage;
+    }
+
     /// <summary>
     /// Checks that the value of the required data field is a valid UIC number.
     /// </summary>
@@ -21,7 +26,7 @@ public class UicNumberAttribute : ValidationAttribute
             return false;
         }
 
-        IUicNumberService uicNumberService = new UicNumberService();
+        UicNumberService uicNumberService = new();
 
         return uicNumberService.ValidateUic(value.ToString()!);
     }
