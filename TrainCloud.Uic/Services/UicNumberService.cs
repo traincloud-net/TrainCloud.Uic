@@ -1,4 +1,4 @@
-﻿namespace TrainCloud.Uic;
+﻿namespace TrainCloud.Uic.Services;
 
 /// <summary>
 /// Methods to work with UIC numbers
@@ -77,7 +77,7 @@ public class UicNumberService : IUicNumberService
     /// <exception cref="ArgumentException">Thrown when the provided UIC number is invalid</exception>
     public string GetChecksum(string fullUic)
     {
-        if(!ValidateUic(fullUic))
+        if (!ValidateUic(fullUic))
         {
             throw new ArgumentException("The provided UIC number is invalid");
         }
@@ -89,7 +89,7 @@ public class UicNumberService : IUicNumberService
     /// Checks if the provided UIC number is valid by calculating the checksum
     /// </summary>
     /// <param name="fullUic">12 digit UIC number (e. g. 238064500941)</param>
-    /// <returns>True if the provided UIC is valid, false if invalid</returns>
+    /// <returns>True if validation is successful; otherwise, false.</returns>
     public bool ValidateUic(string fullUic)
     {
         // If the provided UIC is empty, shorter/longer than 12 digits or not numeric it can't be valid -> return false
@@ -104,10 +104,10 @@ public class UicNumberService : IUicNumberService
         for (int i = 0; i < fullUic.Length - 1; i++)
         {
             int digit = fullUic[^(i + 2)] - '0';
-            sum += (i % 2 == 0) ? Luhn(digit) : digit;
+            sum += i % 2 == 0 ? Luhn(digit) : digit;
         }
         long checkDigit = fullUic[^1] - '0';
-        bool isValid = (10 - (sum % 10)) % 10 == checkDigit;
+        bool isValid = (10 - sum % 10) % 10 == checkDigit;
 
         return isValid;
     }
@@ -116,7 +116,7 @@ public class UicNumberService : IUicNumberService
     {
         if ((digit *= 2) > 9)
         {
-            return digit -9;
+            return digit - 9;
         }
         return digit;
     }

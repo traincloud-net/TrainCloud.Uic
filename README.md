@@ -33,13 +33,37 @@ AABBCCCCDDDX
 * DDD (Three digit car class serial number)
 * X (Checksum)
 
-## How to use
+https://en.wikipedia.org/wiki/UIC_wagon_numbers
 
-Add github to nuget.config
+## How to use the package
+
+Add TrainCloud NuGet feed to `nuget.config` in your solution
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+		<packageSources>
+				<add key="TrainCloud" value="https://nuget.pkg.github.com/traincloud-net/index.json" />
+		</packageSources>
+</configuration>
+```
+Add Traincloud.Uic to your project
 
 ```bash
-dotnet add package Traincloud.Uic
+dotnet add package TrainCloud.Uic
 ```
+
+## Features
+
+### IUicNumberService
+
+Add UicNumberService to the DI container
+
+```csharp
+builder.Services.AddUicNumberService();
+```
+
+Use the service as required
 
 ```csharp
 [inject]
@@ -48,4 +72,16 @@ protected IUicNumberService UicNumberService { get; init; }
 
 ```csharp
 @inject IUicNumberService UICService
+```
+
+### DataAnnotations UicNumberAttribute
+
+```csharp
+public abstract class ExampleModel
+{
+    [UicNumber]
+    public string FullUic { get; set; } = string.Empty;
+
+    public string? OtherProperty { get; set; }
+}
 ```

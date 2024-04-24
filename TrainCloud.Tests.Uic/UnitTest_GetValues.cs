@@ -1,3 +1,5 @@
+using TrainCloud.Uic.Services;
+
 namespace TrainCloud.Tests.Uic;
 
 [TestClass]

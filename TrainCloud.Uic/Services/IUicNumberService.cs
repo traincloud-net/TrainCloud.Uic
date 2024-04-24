@@ -1,4 +1,4 @@
-﻿namespace TrainCloud.Uic;
+﻿namespace TrainCloud.Uic.Services;
 
 /// <summary>
 /// Methods to work with UIC numbers
@@ -49,6 +49,6 @@ public interface IUicNumberService
     /// Checks if the provided UIC number is valid by calculating the checksum
     /// </summary>
     /// <param name="fullUic">12 digit UIC number (e. g. 238064500941)</param>
-    /// <returns>True if the provided UIC is valid, false if invalid</returns>
+    /// <returns>True if validation is successful; otherwise, false.</returns>
     bool ValidateUic(string fullUic);
 }
