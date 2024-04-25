@@ -68,7 +68,6 @@ public class UnitTest_UicNumberAttribute
         // Act
         bool success = Validator.TryValidateProperty(tm.FullUic, context, validationResults);
 
-
         // Assert
         Assert.IsFalse(success);
     }
