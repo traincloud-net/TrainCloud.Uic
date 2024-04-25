@@ -6,7 +6,7 @@ namespace TrainCloud.Uic.DataAnnotations;
 /// <summary>
 /// Specifies that a data field value is a valid UIC number.
 /// </summary>
-[AttributeUsage(AttributeTargets.Property, AllowMultiple = false, Inherited = true)]
+[AttributeUsage(AttributeTargets.Property | AttributeTargets.Parameter, AllowMultiple = false, Inherited = true)]
 public class UicNumberAttribute : ValidationAttribute
 {
     /// <summary>
