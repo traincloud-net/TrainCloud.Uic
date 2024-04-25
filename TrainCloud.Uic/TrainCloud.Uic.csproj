@@ -8,8 +8,8 @@
 				<GenerateDocumentationFile>True</GenerateDocumentationFile>
 				<RepositoryType>git</RepositoryType>
 				<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
-				<PackageReadmeFile>README.md</PackageReadmeFile>
-				<PackageLicenseFile>LICENSE.md</PackageLicenseFile>
+				<!--<PackageReadmeFile>README.md</PackageReadmeFile>
+				<PackageLicenseFile>LICENSE.md</PackageLicenseFile>-->
 				<SignAssembly>False</SignAssembly>
 				<PackageProjectUrl>https://traincloud.net/</PackageProjectUrl>
 				<RepositoryUrl>https://github.com/traincloud-net/TrainCloud.Uic</RepositoryUrl>
