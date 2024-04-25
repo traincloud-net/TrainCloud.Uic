@@ -7,7 +7,7 @@
 
 				<GenerateDocumentationFile>True</GenerateDocumentationFile>
 				<RepositoryType>git</RepositoryType>
-				<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+				<!--<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>-->
 				<!--<PackageReadmeFile>README.md</PackageReadmeFile>
 				<PackageLicenseFile>LICENSE.md</PackageLicenseFile>-->
 				<SignAssembly>False</SignAssembly>
