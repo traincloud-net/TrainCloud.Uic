@@ -60,6 +60,7 @@ dotnet add package TrainCloud.Uic
 Add UicNumberService to the DI container
 
 ```csharp
+using TrainCloud.Uic.Service;
 builder.Services.AddUicNumberService();
 ```
 
@@ -72,16 +73,4 @@ protected IUicNumberService UicNumberService { get; init; }
 
 ```csharp
 @inject IUicNumberService UICService
-```
-
-### DataAnnotations UicNumberAttribute
-
-```csharp
-public abstract class ExampleModel
-{
-    [UicNumber]
-    public string FullUic { get; set; } = string.Empty;
-
-    public string? OtherProperty { get; set; }
-}
 ```
