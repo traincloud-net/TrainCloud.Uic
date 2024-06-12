@@ -1,0 +1,39 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34112.27
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainCloud.Uic", "TrainCloud.Uic\TrainCloud.Uic.csproj", "{B6871C19-7069-401C-B54B-E75140FF92D0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TrainCloud.Tests.Uic", "TrainCloud.Tests.Uic\TrainCloud.Tests.Uic.csproj", "{76A60A53-EFF8-4304-9273-16CA1A8AC842}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{96EEAB53-7BA8-4DD4-8702-0D5742BDFEA4}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+		.gitignore = .gitignore
+		LICENSE.txt = LICENSE.txt
+		README.md = README.md
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B6871C19-7069-401C-B54B-E75140FF92D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B6871C19-7069-401C-B54B-E75140FF92D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B6871C19-7069-401C-B54B-E75140FF92D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B6871C19-7069-401C-B54B-E75140FF92D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76A60A53-EFF8-4304-9273-16CA1A8AC842}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76A60A53-EFF8-4304-9273-16CA1A8AC842}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76A60A53-EFF8-4304-9273-16CA1A8AC842}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76A60A53-EFF8-4304-9273-16CA1A8AC842}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4B42289B-BC4E-44CA-B040-D9ACA8A733BA}
+	EndGlobalSection
+EndGlobal

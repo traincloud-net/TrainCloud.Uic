@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+		<PropertyGroup>
+				<TargetFramework>net8.0</TargetFramework>
+				<ImplicitUsings>enable</ImplicitUsings>
+				<Nullable>enable</Nullable>
+
+				<GenerateDocumentationFile>True</GenerateDocumentationFile>
+				<RepositoryType>git</RepositoryType>
+				<!--<PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>-->
+				<!--<PackageReadmeFile>README.md</PackageReadmeFile>
+				<PackageLicenseFile>LICENSE.md</PackageLicenseFile>-->
+				<SignAssembly>False</SignAssembly>
+				<PackageProjectUrl>https://traincloud.net/</PackageProjectUrl>
+				<RepositoryUrl>https://github.com/traincloud-net/TrainCloud.Uic</RepositoryUrl>
+		</PropertyGroup>
+
+		<ItemGroup>
+		  <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.1" />
+		</ItemGroup>
+
+</Project>
