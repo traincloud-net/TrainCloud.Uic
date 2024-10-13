@@ -93,9 +93,11 @@ public class UicNumberService : IUicNumberService
     public bool ValidateUic(string fullUic)
     {
         // If the provided UIC is empty, shorter/longer than 12 digits or not numeric it can't be valid -> return false
+        // 000000000000 is an edge case. Technically valid, but not used and effective invalid.
         if (string.IsNullOrEmpty(fullUic) ||
             fullUic.Length != 12 ||
-            !long.TryParse(fullUic, out _))
+            !long.TryParse(fullUic, out _) ||
+            fullUic == "000000000000")
         {
             return false;
         }

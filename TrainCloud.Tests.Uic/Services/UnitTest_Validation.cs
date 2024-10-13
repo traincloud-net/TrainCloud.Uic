@@ -71,4 +71,17 @@ public class UnitTest_Validation
         // Assert
         Assert.IsFalse(isValid);
     }
+
+    [TestMethod]
+    public void Test_InvalidUic_000000000000()
+    {
+        // Arrange
+        string invalidUicNumber = "000000000000";
+
+        // Act
+        bool isValid = UicNumberService.ValidateUic(invalidUicNumber);
+
+        // Assert
+        Assert.IsFalse(isValid);
+    }
 }
