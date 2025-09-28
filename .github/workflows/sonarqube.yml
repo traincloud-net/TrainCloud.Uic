@@ -53,6 +53,14 @@ jobs:
         run: |
           dotnet tool install --global dotnet-coverage  
 
+      - name: Clean and restore
+        shell: powershell
+        run: |
+          dotnet clean          
+          dotnet restore
+        env:
+          NuGetPackageSourceCredentials_TrainCloud: Username=${{ secrets.TRAINCLOUD_CHECKOUT_USER }};Password=${{ secrets.TRAINCLOUD_CHECKOUT_TOKEN }}
+
       - name: Build and analyze
         shell: powershell
         run: |
