@@ -10,17 +10,17 @@ The `TrainCloud.Uic` library provides UicNumberService to work with [UIC numbers
 [![NuGet](https://github.com/traincloud-net/TrainCloud.Uic/actions/workflows/nuget.yml/badge.svg)](https://github.com/traincloud-net/TrainCloud.Uic/actions/workflows/nuget.yml) 
 
 ### SonarQube
-[![Bugs](https://sonarqube.traincloud.net/api/project_badges/measure?project=TrainCloud.Uic&metric=bugs&token=sqb_74d98bae799b1ea36a59d686bff9fc7b754ca7a7)](https://sonarqube.traincloud.net/dashboard?id=TrainCloud.Uic) 
-[![Code Smells](https://sonarqube.traincloud.net/api/project_badges/measure?project=TrainCloud.Uic&metric=code_smells&token=sqb_74d98bae799b1ea36a59d686bff9fc7b754ca7a7)](https://sonarqube.traincloud.net/dashboard?id=TrainCloud.Uic) 
-[![Coverage](https://sonarqube.traincloud.net/api/project_badges/measure?project=TrainCloud.Uic&metric=coverage&token=sqb_74d98bae799b1ea36a59d686bff9fc7b754ca7a7)](https://sonarqube.traincloud.net/dashboard?id=TrainCloud.Uic) 
-[![Duplicated Lines (%)](https://sonarqube.traincloud.net/api/project_badges/measure?project=TrainCloud.Uic&metric=duplicated_lines_density&token=sqb_74d98bae799b1ea36a59d686bff9fc7b754ca7a7)](https://sonarqube.traincloud.net/dashboard?id=TrainCloud.Uic) 
-[![Lines of Code](https://sonarqube.traincloud.net/api/project_badges/measure?project=TrainCloud.Uic&metric=ncloc&token=sqb_74d98bae799b1ea36a59d686bff9fc7b754ca7a7)](https://sonarqube.traincloud.net/dashboard?id=TrainCloud.Uic) 
-[![Maintainability Rating](https://sonarqube.traincloud.net/api/project_badges/measure?project=TrainCloud.Uic&metric=sqale_rating&token=sqb_74d98bae799b1ea36a59d686bff9fc7b754ca7a7)](https://sonarqube.traincloud.net/dashboard?id=TrainCloud.Uic) 
-[![Reliability Rating](https://sonarqube.traincloud.net/api/project_badges/measure?project=TrainCloud.Uic&metric=reliability_rating&token=sqb_74d98bae799b1ea36a59d686bff9fc7b754ca7a7)](https://sonarqube.traincloud.net/dashboard?id=TrainCloud.Uic) 
-[![Security Hotspots](https://sonarqube.traincloud.net/api/project_badges/measure?project=TrainCloud.Uic&metric=security_hotspots&token=sqb_74d98bae799b1ea36a59d686bff9fc7b754ca7a7)](https://sonarqube.traincloud.net/dashboard?id=TrainCloud.Uic) 
-[![Security Rating](https://sonarqube.traincloud.net/api/project_badges/measure?project=TrainCloud.Uic&metric=security_rating&token=sqb_74d98bae799b1ea36a59d686bff9fc7b754ca7a7)](https://sonarqube.traincloud.net/dashboard?id=TrainCloud.Uic) 
-[![Technical Debt](https://sonarqube.traincloud.net/api/project_badges/measure?project=TrainCloud.Uic&metric=sqale_index&token=sqb_74d98bae799b1ea36a59d686bff9fc7b754ca7a7)](https://sonarqube.traincloud.net/dashboard?id=TrainCloud.Uic) 
-[![Vulnerabilities](https://sonarqube.traincloud.net/api/project_badges/measure?project=TrainCloud.Uic&metric=vulnerabilities&token=sqb_74d98bae799b1ea36a59d686bff9fc7b754ca7a7)](https://sonarqube.traincloud.net/dashboard?id=TrainCloud.Uic)
+[![Bugs](https://sonarqube.traincloud.dev/api/project_badges/measure?project=TrainCloud.Uic&metric=bugs&token=sqb_e18b4f058d828047e9f93ab85f924e9696e8d5a1)](https://sonarqube.traincloud.dev/dashboard?id=TrainCloud.Uic) 
+[![Code Smells](https://sonarqube.traincloud.dev/api/project_badges/measure?project=TrainCloud.Uic&metric=code_smells&token=sqb_e18b4f058d828047e9f93ab85f924e9696e8d5a1)](https://sonarqube.traincloud.dev/dashboard?id=TrainCloud.Uic) 
+[![Coverage](https://sonarqube.traincloud.dev/api/project_badges/measure?project=TrainCloud.Uic&metric=coverage&token=sqb_e18b4f058d828047e9f93ab85f924e9696e8d5a1)](https://sonarqube.traincloud.dev/dashboard?id=TrainCloud.Uic) 
+[![Duplicated Lines (%)](https://sonarqube.traincloud.dev/api/project_badges/measure?project=TrainCloud.Uic&metric=duplicated_lines_density&token=sqb_e18b4f058d828047e9f93ab85f924e9696e8d5a1)](https://sonarqube.traincloud.dev/dashboard?id=TrainCloud.Uic) 
+[![Lines of Code](https://sonarqube.traincloud.dev/api/project_badges/measure?project=TrainCloud.Uic&metric=ncloc&token=sqb_e18b4f058d828047e9f93ab85f924e9696e8d5a1)](https://sonarqube.traincloud.dev/dashboard?id=TrainCloud.Uic) 
+[![Maintainability Rating](https://sonarqube.traincloud.dev/api/project_badges/measure?project=TrainCloud.Uic&metric=sqale_rating&token=sqb_e18b4f058d828047e9f93ab85f924e9696e8d5a1)](https://sonarqube.traincloud.dev/dashboard?id=TrainCloud.Uic) 
+[![Reliability Rating](https://sonarqube.traincloud.dev/api/project_badges/measure?project=TrainCloud.Uic&metric=reliability_rating&token=sqb_e18b4f058d828047e9f93ab85f924e9696e8d5a1)](https://sonarqube.traincloud.dev/dashboard?id=TrainCloud.Uic) 
+[![Security Hotspots](https://sonarqube.traincloud.dev/api/project_badges/measure?project=TrainCloud.Uic&metric=security_hotspots&token=sqb_e18b4f058d828047e9f93ab85f924e9696e8d5a1)](https://sonarqube.traincloud.dev/dashboard?id=TrainCloud.Uic) 
+[![Security Rating](https://sonarqube.traincloud.dev/api/project_badges/measure?project=TrainCloud.Uic&metric=security_rating&token=sqb_e18b4f058d828047e9f93ab85f924e9696e8d5a1)](https://sonarqube.traincloud.dev/dashboard?id=TrainCloud.Uic) 
+[![Technical Debt](https://sonarqube.traincloud.dev/api/project_badges/measure?project=TrainCloud.Uic&metric=sqale_index&token=sqb_e18b4f058d828047e9f93ab85f924e9696e8d5a1)](https://sonarqube.traincloud.dev/dashboard?id=TrainCloud.Uic) 
+[![Vulnerabilities](https://sonarqube.traincloud.dev/api/project_badges/measure?project=TrainCloud.Uic&metric=vulnerabilities&token=sqb_e18b4f058d828047e9f93ab85f924e9696e8d5a1)](https://sonarqube.traincloud.dev/dashboard?id=TrainCloud.Uic)
 
 ## UIC numbers
 

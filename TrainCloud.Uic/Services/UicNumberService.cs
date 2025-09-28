@@ -5,6 +5,8 @@
 /// </summary>
 public class UicNumberService : IUicNumberService
 {
+    private const string _argumentExceptionMessage = "The provided UIC number is invalid.";
+
     /// <summary>
     /// Gets the 2 digit car type code of the provided UIC number
     /// </summary>
@@ -15,7 +17,7 @@ public class UicNumberService : IUicNumberService
     {
         if (!ValidateUic(fullUic))
         {
-            throw new ArgumentException("The provided UIC number is invalid");
+            throw new ArgumentException(_argumentExceptionMessage);
         }
 
         return fullUic.Substring(0, 2);
@@ -31,7 +33,7 @@ public class UicNumberService : IUicNumberService
     {
         if (!ValidateUic(fullUic))
         {
-            throw new ArgumentException("The provided UIC number is invalid");
+            throw new ArgumentException(_argumentExceptionMessage);
         }
 
         return fullUic.Substring(2, 2);
@@ -47,7 +49,7 @@ public class UicNumberService : IUicNumberService
     {
         if (!ValidateUic(fullUic))
         {
-            throw new ArgumentException("The provided UIC number is invalid");
+            throw new ArgumentException(_argumentExceptionMessage);
         }
 
         return fullUic.Substring(4, 4);
@@ -63,7 +65,7 @@ public class UicNumberService : IUicNumberService
     {
         if (!ValidateUic(fullUic))
         {
-            throw new ArgumentException("The provided UIC number is invalid");
+            throw new ArgumentException(_argumentExceptionMessage);
         }
 
         return fullUic.Substring(8, 3);
@@ -79,7 +81,7 @@ public class UicNumberService : IUicNumberService
     {
         if (!ValidateUic(fullUic))
         {
-            throw new ArgumentException("The provided UIC number is invalid");
+            throw new ArgumentException(_argumentExceptionMessage);
         }
 
         return fullUic.Substring(11, 1);

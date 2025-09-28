@@ -27,7 +27,7 @@ public class UnitTest_GetValues
         string invalidUicNumber = "37AÜ841599";
 
         // Assert
-        Assert.ThrowsException<ArgumentException>(() =>
+        Assert.ThrowsExactly<ArgumentException>(() =>
         {
             // Act
             _ = UicNumberService.GetCarTypeCode(invalidUicNumber);
@@ -54,7 +54,7 @@ public class UnitTest_GetValues
         string invalidUicNumber = "37§7841599";
 
         // Assert
-        Assert.ThrowsException<ArgumentException>(() =>
+        Assert.ThrowsExactly<ArgumentException>(() =>
         {
             // Act
             _ = UicNumberService.GetCountryCode(invalidUicNumber);
@@ -81,7 +81,7 @@ public class UnitTest_GetValues
         string invalidUicNumber = "XXX";
 
         // Assert
-        Assert.ThrowsException<ArgumentException>(() =>
+        Assert.ThrowsExactly<ArgumentException>(() =>
         {
             // Act
             _ = UicNumberService.GetCarClassCode(invalidUicNumber);
@@ -108,7 +108,7 @@ public class UnitTest_GetValues
         string invalidUicNumber = "2180§$206467";
 
         // Assert
-        Assert.ThrowsException<ArgumentException>(() =>
+        Assert.ThrowsExactly<ArgumentException>(() =>
         {
             // Act
             _ = UicNumberService.GetCarClassSerialNr(invalidUicNumber);
@@ -135,7 +135,7 @@ public class UnitTest_GetValues
         string invalidUicNumber = "37AÜ841599";
 
         // Assert
-        Assert.ThrowsException<ArgumentException>(() =>
+        Assert.ThrowsExactly<ArgumentException>(() =>
         {
             // Act
             _ = UicNumberService.GetChecksum(invalidUicNumber);
