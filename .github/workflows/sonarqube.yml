@@ -1,4 +1,4 @@
-name: SonarQube
+name: SonarQube with test coverage
 
 on:
   push:
